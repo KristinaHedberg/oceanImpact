@@ -35,6 +35,23 @@ nav{
   letter-spacing: 3px; 
   font-size: 14px;
 }
+button{
+  color: #FFFFFF;
+  background-color: #118AB2;
+  border: none;
+  padding: 10px 30px;
+  font-family: montserrat; 
+	font-size: .75em;
+  cursor: pointer;
+  transition-property: background-color, color;
+  transition-duration: 0.25s;
+  border-radius: 6px;
+}
+
+button:hover{
+  background-color: #114D74;
+  color: #ffffff;
+}
 
 .burger{
   display: none; 
