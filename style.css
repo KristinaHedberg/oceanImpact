@@ -61,18 +61,33 @@ button:hover{
   color: #ffffff;
 }
 
-.burger{
+.menu{
   display: none; 
   cursor: pointer;
 }
 
-.burger div{
+.menu div{
   width: 25px;
   height: 3px; 
   background-color: #444445; 
   margin: 5px;
   transition: all 0.3s ease; 
 }
+
+main .siteTitle{
+  background-image: url("backgroundimage.png");
+  background-size: cover; 
+  height: 110vh;
+  display: flex; 
+  justify-content: center;
+}
+
+main .siteTitle .backgroundImage{
+  padding-top: 10rem; 
+  text-align: center; 
+  color: white; 
+}
+
 
 @media screen and (max-width: 1150px){
   .nav-links{
@@ -103,7 +118,7 @@ button:hover{
   .nav-links li{
     opacity: 0;
   }
-  .burger{
+  .menu{
     display: block;
   }
 }
