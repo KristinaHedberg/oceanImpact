@@ -40,7 +40,7 @@
             <img src="images/turtle1.jpeg" alt="turle swimming"width = "100%">
           </div>
           <div class="titletext">
-            <h2>Investing in planet ocean</h2>
+            <h2>Investing in the future of Planet Ocean</h2>
             <p>Ocean Impact Organistion has a mission to create an abundant and sustainable ocean through inspiration, innovation, leadership and good business</p>
             <div class = "donate">
               <button>DONATE</button>
@@ -53,31 +53,20 @@
 
     <!----our mission section---->
     <section id="ourMission">
-        <div class ="backgroundImage">
-          <h2>OUR MISSION </h2>
-          <p>click here to play the video</p>
+      <h2>OUR MISSION </h2>
+      <!-- The video -->
+      <video autoplay muted loop id="myVideo">
+        <source src="water.mp4" type="video/mp4">
+      </video>
 
-        </div>
-      </section>
-      <!--x--our mission section--x-->
-
-      <!----our approach section---->
-    <section id="ourApproach">
-        <div class ="backgroundImage">
-          <h2>OUR APPROACH </h2>
-          <p>some text </p>
-        </div>
-      </section>
-      <!--x--our approach section--x-->
-
-      <!----our people section---->
-    <section class="ourPeople">
-        <div>
-          <h2>OUR PEOPLE </h2>
-          <p>sometecxt</p>
-        </div>
-      </section>
-      <!--x--our approach section--x-->
+      <!-- Optional: some overlay text to describe the video -->
+      <div class="content">
+        <p>Ocean Impact Org has a mission to create an abundant and sustainable ocean through inspiration, innovation, leadership and good business</p>
+        <!-- Use a button to pause/play the video with JavaScript -->
+        <button id="myBtn" onclick="myVideo()">Pause</button>
+      </div>
+    </section>
+     
 
     </main>
     <!--------x------main section--------x------->
