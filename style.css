@@ -40,10 +40,10 @@ p{
 }
 
 .logo{
-  color:#444445; 
-  text-transform: uppercase; 
-  letter-spacing: 4px;
-  font-size: 20px;
+  width:auto; 
+}
+.logo img{
+  padding-top:5px; 
 }
 
 .nav-links{
@@ -287,6 +287,10 @@ main #siteTitle{
   padding-bottom: 25px; 
 }
 
+#ourApproach p{
+  color: white; 
+}
+
 .our-approach-grid {
   display: grid;
   align-items: center; 
@@ -339,38 +343,95 @@ main #siteTitle{
   height: 100%; 
 }
   
-
 /* OUR PEOPLE SECTION */
-
 #ourPeople{
-
-  background-color: white; }
-
-
-.our-people-grid {
-  display: grid;
+  background-color: white; 
   align-items: center; 
-  text-align: center; 
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 2fr));
-  grid-template-rows: 1fr;
-  gap: 0px 28px;
-  padding: 5vh; 
-  
-}
-
-.our-people-grid p{
-  padding-top: 2vw; 
-  color: #444445
-}
-.our-people-grid img{
-  width: 60%; 
-  border-radius: 50%; 
-}
-
-#ourPeople h2{
   margin-left: 10vw; 
-  margin-top:10vw;
+  margin-right: 10vw;
+}
+#ourPeople h2{
+  color:#444445;
   padding-top: 25px; 
   padding-bottom: 25px; 
+}
+#ourPeople p{
+  color:#444445;
+  padding: 5px; 
+}
+#ourPeople > .content{
+    background: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* our people boxes - source code: www.w3schools.com/css/css_image_gallery.asp */
+div.gallery {
+  margin: auto; 
+}
+div.gallery img {
+  width: 100%; 
+  margin: auto; 
+  height: 100%; 
+  border-radius: 50%;
+}
+div.desc {
+  padding: 25px;
+  text-align: left;
+}
+.responsive {
+  padding: 20px;
+  width: 515px;
+}
+
+@media only screen and (max-width: 800px) {
+  .responsive {
+    width: 69.99999%;
+  }
+  #ourPeople > .content{
+    flex-direction: column;
+  }
+  div.gallery {
+    background-color: rgb(241, 241, 241);
+    border-radius: 15px; 
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+/* the rest of the team */
+
+.the-team-grid {
+  display: grid;
+  text-align: center; 
+  image-align: center; 
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 2fr))
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Kartik Rob Sam Tim";
+}
+
+
+.the-team-grid img{
+  border-radius: 70%; 
+  width: 60%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.the-team-grid p{
+  font-size:10px; 
+}
+
+.the-team-grid a{
+  color: #444445
+}
+.the-team-grid a:hover{
+  color:#7AD0E6; 
 }
 
