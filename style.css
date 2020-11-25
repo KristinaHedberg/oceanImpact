@@ -1,3 +1,5 @@
+/* Global rules */
+
 *{
   margin: 0px;
   padding: 0px; 
@@ -22,6 +24,7 @@ main{
   color: white; 
 }
 
+/* NAV BAR */
 
 #navBar{
   display: flex;
@@ -99,45 +102,6 @@ button:hover{
   transition: all 0.3s ease; 
 }
 
-
-main #siteTitle{
-  //background-image: url("images/backgroundimage.png");
-  //background-size: cover; 
-  //height: 110vh;
-  text-align: left;
-  image-align: center;
-  color: white; 
-}
-
-body{
-  background-color: rgb(180, 204, 209);
-}
-
-
-.gridcontainerA {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 2fr));
-  align-items: center;
-  grid-column-gap: 40px; 
-  margin-left: 10vw; 
-  margin-right: 10vw; 
-  margin-top: 10vw; 
-}
-
-.titleimage img{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
-}
-
-.titletext p{
-  padding-top: 20px; 
-  padding-bottom: 25px;
-}
-.titletext h2{
-  padding-top: 25px; 
-}
-
-
-
 @media screen and (max-width: 1150px){
   .nav-links{
     justify-content: space-around;
@@ -202,8 +166,63 @@ body{
   transform: rotate(45deg) translate(-5px,-6px);
 }
 
+
+/* TITLE SECTION */
+
+
+
+main #siteTitle{
+  text-align: left;
+  image-align: center;
+  color: white; 
+}
+
+body{
+  background-color: white; //rgb(180, 204, 209);
+}
+
+.gridcontainerA {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 2fr));
+  align-items: center;
+  grid-column-gap: 40px; 
+  margin-left: 10vw; 
+  margin-right: 10vw; 
+  margin-top: 10vw; 
+}
+@media screen and (max-width: 750px){
+  .gridcontainerA{
+    padding-top: 5vw; 
+  }
+}
+@media screen and (max-width: 500px){
+  .gridcontainerA{
+    padding-top: 15vw; 
+  }
+}
+
+.titleimage img{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+.titletext p{
+  padding-top: 20px; 
+  padding-bottom: 25px;
+}
+.titletext h2{
+  padding-top: 25px; 
+}
+
+
+/* OUR MISSION SECTION */
 #ourMission{
+  background-image: url("images/ourmission.png");
+  background-size: cover; 
   margin: 10vw; 
+}
+#ourMission h2{
+  padding-top: 25px; 
+  padding-bottom: 25px; 
 }
 
 /* Style the video: 100% width and height to cover the entire window code based on tutorial from w3 schools https://www.w3schools.com/howto/howto_css_fullscreen_video.asp*/
@@ -217,7 +236,7 @@ body{
 
 /* Add some content at the bottom of the video/page */
 .content {
-  position: relative;
+  position: absolute;
   margin-top: -200px; 
   margin-left: 10px; 
   background: #114D74;
@@ -231,7 +250,6 @@ body{
   padding-bottom: 10px; 
 }
 
-
 /* Style the button used to pause/play the video */
 #myBtn {
   width: 80px;
@@ -243,7 +261,6 @@ body{
   box-shadow: none; 
 }
 
-
 #myBtn:hover {
   background: #ddd;
   color: black;
@@ -252,40 +269,119 @@ body{
 /* making sure the video text makes sense for iphone too */
 @media screen and (max-width: 850px){
   .content{
-    margin-top: 0;
-    width: 100%;
-    margin-left: 0px;
-    padding: 10px; 
+    margin:0; 
+    width: 80%;
+    margin-top: -10px; 
+    border-radius: 0px 0px 10px 10px; 
+  }
+  #myVideo{
+    border-radius: 10px 10px 0px 0px; 
   }
 }
-@media screen and (max-width: 375px){
+
+@media screen and (max-width: 600px){
   .content{
-    padding: 5px; 
+    padding:10px; 
   }
 }
+
+/* OUR APPROACH SECTION */
 
 #ourApproach{
-  margin: 10vw; 
+  background-image: url("images/ourApproachBackground.png");
+  background-size: cover; 
 }
 
+@media screen and (max-width: 850px){
+  #ourApproach h2{
+    margin-top:200px; 
+  }
+}
+
+#ourApproach h2{
+  margin-left: 10vw; 
+  padding-top: 25px; 
+  padding-bottom: 25px; 
+}
 
 .our-approach-grid {
   display: grid;
   align-items: center; 
   text-align: center; 
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 2fr));
   grid-template-rows: 1fr 1fr;
   grid-column-gap: 10vh; 
-  grid-row-gap: 5vh; 
-  padding-top: 5vh; 
+  grid-row-gap: 10vh; 
+  padding: 5vw 10vw 5vw 10vw; 
+}
+.our-approach-grid p{
+  padding-top: 2vw; 
+}
+
+.our-approach-grid img{
+  width: 60%; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 50%;
 
 }
 
 @media screen and (max-width: 750px){
   .our-approach-grid {
-    display: block;  
+    display: block; 
+    margin-top: 10px; 
   }
-  .our-approach-grid{
-    margin-top: 10px;  
+  .our-approach-grid p{
+    padding-top: 5vw; 
+    padding-bottom: 10vw
+      
   }
 }
+
+.programsbutton{
+  display: flex;
+  justify-content: center; 
+}
+
+.programsbutton button{
+  background-color: #A6CEB7
+}
+.programsbutton button a{
+  color: white; 
+}
+  
+
+/* OUR PEOPLE SECTION */
+
+#ourPeople{
+
+  
+}
+
+
+.our-people-grid {
+  display: grid;
+  align-items: center; 
+  text-align: center; 
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 2fr));
+  grid-template-rows: 1fr;
+  gap: 0px 28px;
+  padding: 5vh; 
+  
+}
+
+.our-people-grid p{
+  padding-top: 2vw; 
+  color: #444445
+}
+.our-people-grid img{
+  width: 60%; 
+  border-radius: 50%; 
+}
+
+#ourPeople h2{
+  margin-left: 10vw; 
+  margin-top:10vw;
+  padding-top: 25px; 
+  padding-bottom: 25px; 
+}
+
