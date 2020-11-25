@@ -24,6 +24,10 @@ main{
   color: white; 
 }
 
+p{
+  color: #444445; 
+}
+
 /* NAV BAR */
 
 #navBar{
@@ -166,19 +170,11 @@ button:hover{
   transform: rotate(45deg) translate(-5px,-6px);
 }
 
-
 /* TITLE SECTION */
-
-
-
 main #siteTitle{
   text-align: left;
   image-align: center;
   color: white; 
-}
-
-body{
-  background-color: white; //rgb(180, 204, 209);
 }
 
 .gridcontainerA {
@@ -208,46 +204,43 @@ body{
 .titletext p{
   padding-top: 20px; 
   padding-bottom: 25px;
-}
-.titletext h2{
-  padding-top: 25px; 
-}
+  color:#444445;
 
+}
+.titletext h2, h3{
+  padding-top: 25px; 
+  color: #444445; 
+}
 
 /* OUR MISSION SECTION */
-#ourMission{
-  background-image: url("images/ourmission.png");
-  background-size: cover; 
-  margin: 10vw; 
-}
-#ourMission h2{
+
+#ourMission h1{
+  color: white;
   padding-top: 25px; 
-  padding-bottom: 25px; 
+  padding-bottom: 25px;
 }
 
 /* Style the video: 100% width and height to cover the entire window code based on tutorial from w3 schools https://www.w3schools.com/howto/howto_css_fullscreen_video.asp*/
 #myVideo {
-  position: static;
+  margin-top: 20vh; 
   align-items: center; 
   width: 100%;
-  border-radius: 25px; 
-
+  background-color: #9fcadc; 
 }
 
 /* Add some content at the bottom of the video/page */
 .content {
-  position: absolute;
-  margin-top: -200px; 
-  margin-left: 10px; 
   background: #114D74;
   color: #f1f1f1;
-  width: 50%;
-  padding: 25px;
-  border-radius: 25px; 
+  width: 100%;
+  padding-top: 2vh;
+  padding-left: 5vh; 
+  padding-bottom: 5vh; 
 }
 
 .content p{
-  padding-bottom: 10px; 
+  padding-bottom: 15px; 
+  color: white; 
 }
 
 /* Style the button used to pause/play the video */
@@ -268,10 +261,7 @@ body{
 
 /* making sure the video text makes sense for iphone too */
 @media screen and (max-width: 850px){
-  .content{
-    margin:0; 
-    width: 80%;
-    margin-top: -10px; 
+  .content{ 
     border-radius: 0px 0px 10px 10px; 
   }
   #myVideo{
@@ -288,14 +278,7 @@ body{
 /* OUR APPROACH SECTION */
 
 #ourApproach{
-  background-image: url("images/ourApproachBackground.png");
-  background-size: cover; 
-}
-
-@media screen and (max-width: 850px){
-  #ourApproach h2{
-    margin-top:200px; 
-  }
+  background-color: #9fcadc;
 }
 
 #ourApproach h2{
@@ -348,14 +331,20 @@ body{
 .programsbutton button a{
   color: white; 
 }
+
+/* background 3section divider */
+#Background3{
+  background-image: url("images/background3.png");
+  background-size: cover; 
+  height: 100%; 
+}
   
 
 /* OUR PEOPLE SECTION */
 
 #ourPeople{
 
-  
-}
+  background-color: white; }
 
 
 .our-people-grid {
