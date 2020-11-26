@@ -17,14 +17,14 @@
       <h4>OIO</h4>
     </div>
     <ul class ="nav-links">
-      <li><a href="index.html#index">About</a></li>
+      <li><a href="index.html#index">Home</a></li>
       <li><a href="programs.html#programs">Programs</a></li>
       <li><a href="involved.html#involved">Get Involved</a></li>
       <li><a href="news.html#news">News</a></li>
     </ul>
     <div class = "donate">
-      <button>Donate</button>
-    </div>
+        <button><a href="donate.html">Donate</a></button>
+      </div>
     <div class="menu">
       <div class="line1"></div>
       <div class="line2"></div>
@@ -35,15 +35,39 @@
 
   <!--------------main section--------------->
   <main>
-    <!----initial site section---->
-    <section class="siteTitle">
-      <div class ="backgroundImage">
-        <h2>news</h2>
-			
-        
+    
+    <section id="news">
+
+      <h2>OCEAN IMPACT BLOG</h2>
+
+      <div class="slider">
+        <a href="#slide-1">1</a>
+        <a href="#slide-2">2</a>
+        <a href="#slide-3">3</a>
+        <a href="#slide-4">4</a>
+        <a href="#slide-5">5</a>
+
+        <div class="slides">
+          <div id="slide-1">
+            1
+          </div>
+          <div id="slide-2">
+            2
+          </div>
+          <div id="slide-3">
+            3
+          </div>
+          <div id="slide-4">
+            4
+          </div>
+          <div id="slide-5">
+            5
+          </div>
+        </div>
       </div>
+
 		</section>
-   <!--x--initial site section--x-->
+   
 
    <!----our mission section---->
    <section class="ourMission">
@@ -54,7 +78,22 @@
       </div>
 		</section>
   </main>
-  <!--------------main section--------------->
+  <!-- back to top-->
+  <button onclick="topFunction()" id="mytopBtn" title="Go to top"><i class="fas fa-chevron-up"></i>Top</button>
+
+  <!-- footer -->
+
+  <footer id ="oceanFooter">
+    <div class="grid-container-footer">
+      <div class="socials">
+        <a href=""><i class="fab fa-twitter-square fa-2x"></i></a>
+        <a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+        <a href=""><i class="fab fa-instagram-square fa-2x"></i></a>
+        <a href=""><i class="fab fa-youtube-square fa-2x"></i></a>
+      </div>
+    </div>
+    
+  </footer>
 
 <script src="script.js"></script>
 </body>

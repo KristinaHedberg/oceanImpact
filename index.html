@@ -6,22 +6,28 @@
     <title>Ocean Impact Organisation</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/32534efb8e.js" crossorigin="anonymous"></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
   </head>
 
   <body>
     <!--------------navigation--------------->
     <nav id = "navBar">
       <div class="logo">
-        <img src="images/logosmall.png" alt="">
+        <img src="images/logosmall.png" alt="logo for ocean impact org">
       </div>
       <ul class ="nav-links">
-        <li><a href="#">About</a></li>
+        <li><a href="#">Home</a></li>
         <li><a href="programs.html#programs">Programs</a></li>
         <li><a href="involved.html#involved">Get Involved</a></li>
         <li><a href="news.html#news">News</a></li>
       </ul>
       <div class = "donate">
-        <button>Donate</button>
+
+        <button><a href="donate.html">Donate</a></button>
       </div>
       <div class="menu">
         <div class="line1"></div>
@@ -181,9 +187,31 @@
             </div>
           </div>
         </div>
+        <div class="joinbutton">
+          <button><a href="mailto:careers@ocean.com">Join The Team!</a></button>
+        </div>
       </section>
     </main>
     <!--------x------main section--------x------->
+
+    <!-- back to top code snippet from w3 schools: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
+
+    <button onclick="topFunction()" id="mytopBtn" title="Go to top"><i class="fas fa-chevron-up"></i>Top</button>
+
+    <!-- footer -->
+    
+
+    <footer id ="oceanFooter">
+      <div class="grid-container-footer">
+        <div class="socials">
+          <a href="https://twitter.com/oceanimpactorg"><i class="fab fa-twitter-square fa-2x"></i></a>
+          <a href="https://www.facebook.com/oceanimpactorg/"><i class="fab fa-facebook-square fa-2x"></i></a>
+          <a href="https://www.instagram.com/oceanimpactorg/"><i class="fab fa-instagram-square fa-2x"></i></a>
+          <a href="https://www.youtube.com/channel/UC9CBWCpsBAtbkFYBhF7-bOg"><i class="fab fa-youtube-square fa-2x"></i></a>
+        </div>
+      </div>
+      
+    </footer>
 
   <script src="script.js"></script>
   </body>

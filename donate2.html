@@ -14,7 +14,7 @@
     <!--------------navigation--------------->
     <nav id = "navBar">
       <div class="logo">
-        <img src="images/logosmall.png" alt="ogo for ocean impact org">
+        <img src="images/logosmall.png" alt="">
       </div>
       <ul class ="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -32,86 +32,78 @@
       </div>
     </nav>
     
-
-    <!-- Main section -->
     <main>
-      <div class="backbutton">
-        <a href="index.html"><i class="fas fa-chevron-left"></i>home</a>
-      </div>
 
+      <div class="backbutton">
+        <a href="donate.html"><i class="fas fa-chevron-left"></i>back</a>
+      </div>
+     
       <section id = "donationform">
 
         <div class="Donate-Title">
           <h2>Support Ocean Impact Org</h2>
         </div>
         <figure>
-          <img id="progress" src="images/progress1.png" alt="progressbar">
+          <img id="progress" src="images/progress2.png" alt="progressbar">
         </figure>
 
-        <section id="Donate-Info">
-          <div class="Donation-frequency">
-            <div class="Donation-single">
-              <h4>Single Donation</h4>
-            </div>
-            <div class="Donation-month">
-              <h4>Monthly Donation</h4>
-            </div>
-          </div>
+        <div class="row">
+          <div class="col-75">
+            <div class="container">
+              
+              <div class="row">
+                
 
-          <div class="FirstName">
-            <label for="FirstName">First name</label>
-              <input id="FirstName" name="FirstName" type="text" required>
-          </div>
-
-          <div class="LastName">
-            <label for="LastName">Surname</label>
-              <input id="LastName" name="LastName" type="text" required>
-          </div>
-
-          <div class="Email">
-            <label for="Email">Email Address</label>
-              <input id="Email" name="Email" type="text" required>
-          </div>
-        
-          <div class="Amount">
-            <h4>SELECT AMOUNT</h4>
-          </div>
-
-          <div class="donateAmount">    
-            <div class="donate5">
-              <p>$5</p>
-            </div>
             
-            <div class="donate15">
-              <p>$15</p>
-            </div>
-            
-            <div class="donate30">
-              <p>$30</p>
-            </div>
-            
-            <div class="selectamount">
-              <input type="number" id="amount" name="amount" placeholder="select amount">
+                <div class="col-50">
+                  <label for="fname">Accepted Cards</label>
+                  <div class="icon-container">
+                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                  </div>
+                  <label for="cname">Name on Card</label>
+                  <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                  <label for="ccnum">Credit card number</label>
+                  <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                  <label for="expmonth">Exp Month</label>
+                  <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="expyear">Exp Year</label>
+                      <input type="text" id="expyear" name="expyear" placeholder="2018">
+                    </div>
+                    <div class="col-50">
+                      <label for="cvv">CVV</label>
+                      <input type="text" id="cvv" name="cvv" placeholder="352">
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+      
 
-          <div class="Donate-donate">
-            <button class="Donate-btn"><a href="donate2.html">Donate</a></button>
-          </div>
+        <div class="Donate-donate">
+          <button class="Donate-btn"><a href="index.html">Donate</a></button>
+        </div>
 
-        </section>
       </section>
 
       <script src="script.js"></script>
   
     </main>
+    
+
     <!-- back to top-->
 
     <button onclick="topFunction()" id="mytopBtn" title="Go to top"><i class="fas fa-chevron-up"></i>Top</button>
 
     <!-- footer -->
     
-
     <footer id ="oceanFooter">
       <div class="grid-container-footer">
         <div class="socials">

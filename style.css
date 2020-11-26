@@ -17,15 +17,19 @@ ul{
 
 h2{
   font-size: 2.5rem; 
-  color: white; 
 }
 
 main{
   color: white; 
 }
 
+
 p{
   color: #444445; 
+}
+
+button a{
+  color: white; 
 }
 
 /* NAV BAR */
@@ -335,6 +339,9 @@ main #siteTitle{
 .programsbutton button a{
   color: white; 
 }
+.programsbutton button:hover{
+  background-color: #00695B;
+}
 
 /* background 3section divider */
 #Background3{
@@ -359,6 +366,15 @@ main #siteTitle{
   color:#444445;
   padding: 5px; 
 }
+
+#ourPeople a{
+  color:#444445;
+}
+
+#ourPeople a:hover{
+  color:#7AD0E6;
+}
+
 #ourPeople > .content{
     background: none;
     display: flex;
@@ -435,3 +451,482 @@ div.desc {
   color:#7AD0E6; 
 }
 
+.joinbutton{
+  display: flex;
+  justify-content: center; 
+  padding: 20px; 
+}
+
+.joinbutton button{
+  background-color: #A6CEB7
+}
+.join button a{
+  color: white; 
+}
+
+.joinbutton button:hover{
+  background-color: #00695B;
+}
+
+/* back to top button */
+
+#mytopBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 5%; /* Place the button at the bottom of the page */
+  right: 1%; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color:transparent;
+  color: #ddd; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  box-shadow: none;
+}
+
+#mytopBtn:hover {
+  color: #555; /* Add a dark-grey background on hover */
+}
+
+/* footer */
+
+#oceanFooter{
+  background-image: url("images/footer2.png");
+  background-size: cover; 
+}
+
+#oceanFooter p,h3,a{
+  color: white; 
+}
+
+.grid-container-footer {
+  padding-top:120px;
+  padding-bottom: 80px; 
+}
+
+.socials { 
+  grid-area: socials; 
+  position:absolute;
+  left:5%; 
+  }
+}
+
+
+/* Donate page */
+
+#donationform{
+  background-color:#eff6f1;
+  width:100%;
+  height:100%;
+}
+
+
+.grid-container-donate {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: auto auto auto;
+  gap: 0px 0px;
+  grid-template-areas:
+    "nav nav nav"
+    "Donate-Title Donate-Title Donate-Title"
+    "... Donate-Info ...";
+}
+
+
+.Donate-Title {
+  grid-area: Donate-Title;
+  text-align: center;
+}
+.Donate-Title h2{
+  color:#144e75;
+  font-size: 3rem;
+}
+
+#Donate-Info {
+  display: grid;
+  margin-left:5%;
+  margin-right:5%;
+  grid-area: Donate-Info;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Donation-frequency   Donation-frequency   Donation-frequency   Donation-frequency   Donation-frequency   Donation-frequency"
+    "FirstName       FirstName       FirstName       LastName        LastName        LastName     "
+    "Email           Email           Email           Email           Email           Email        "
+    "Amount          Amount          Amount          Amount          Amount          Amount       "
+    "donateAmount    donateAmount    donateAmount    donateAmount    donateAmount    donateAmount "
+    "Donate-donate   Donate-donate   Donate-donate   Donate-donate   Donate-donate   Donate-donate";
+}
+
+
+.Donation-frequency {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 15px; 
+  grid-area: Donation-frequency;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 5vw; ;
+  
+  grid-template-areas:
+  "Donation-single Donation-month";
+  
+  
+}
+
+.Donation-single {
+  text-align: center;
+  grid-area: Donation-single;
+  padding: 15px;
+  background-color:#47677f;
+  transition-property: background-color;
+  transition-duration: 0.25s;
+  border-width: 1px;
+  border-radius: 14px;
+  box-shadow: 3px 3px 3px #888888;
+  cursor: pointer;
+}
+
+.Donation-single:hover{
+  background-color: #636363;
+}
+
+.Donation-single:active{
+  background-color: cornflowerblue;
+}
+      
+.Donation-month {
+  text-align: center;
+  padding: 15px;
+  grid-area: Donation-month;
+  background-color:#47677f;
+  transition-property: background-color;
+  transition-duration: 0.25s;
+  border-radius: 14px;
+  box-shadow: 3px 3px 3px #888888;
+  cursor: pointer;
+}
+.Donation-month:hover{
+  background-color: #636363;
+}
+
+.Donation-month:active{
+  background-color: cornflowerblue;
+}
+
+
+
+
+.FirstName {
+  grid-area: FirstName;
+  color:#444445;
+  margin-bottom:5%;
+}
+
+div > label{
+  color:#444445;
+}
+
+.FirstName input {
+  width: 90%;
+}
+
+.LastName {
+  grid-area: LastName;
+  margin-bottom:5%;
+}
+
+.LastName input {
+  width:90%;
+}
+
+.Email {
+  grid-area: Email;
+  margin-bottom:5%;
+}
+.Amount {
+  grid-area: Amount;
+  text-align: center;
+}
+.Amount h4{
+  color: #144e75;
+}
+
+.donateAmount {
+  grid-area: donateAmount;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 0px 0px;
+  grid-template-areas:
+  "donate5 donate15 donate30 selectamount"
+}
+
+.donate5 {
+  grid-area: donate5;
+}
+
+.donate15 {
+  grid-area: donate15;
+}
+
+.donate30 {
+  grid-area: donate30;
+}
+
+.selectamount {
+  grid-area: selectamount;
+  margin-top: auto;
+  margin-bottom:auto;
+}
+.selectamount label{
+  font-size: 10px;
+}
+.selectamount input{
+  width: 75%;
+  height: 50%;
+  border: none;
+  background-color: transparent;
+}
+
+.donateAmount p{
+  color:#444445;
+}
+
+.donate5, .donate15, .donate30, .selectamount {
+  background-color: #eff6f1;
+  width: 60%;
+  height: 70%;
+  border-radius: 10px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.donate5:hover, .donate15:hover, .donate30:hover, .selectamount:hover{
+  background-color: #c6c6c6;
+}
+
+.donate5:active, .donate15:active, .donate30:active, .selectamount:active{
+  background-color: #4aa3e5;
+}
+
+.Donate-donate {
+  margin-top: 4em;
+  grid-area: Donate-donate;
+  margin-bottom: 5em;
+}
+
+
+.Donate-btn{
+  color: #FFFFFF;
+  background-color: #118AB2;
+  width: 40%;
+  height: 90%;
+  text-align: center;
+  border: none;
+  padding: 10px 30px;
+  font-family: 'Montserrat';
+  font-weight: 500; 
+  cursor: pointer;
+  transition-property: background-color, color;
+  transition-duration: 0.25s;
+  border-radius: 6px;
+  box-shadow: 3px 3px 3px #888888;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+}
+
+.Donate-btn:hover{
+  background-color: #114D74;
+  color: #ffffff;
+}
+
+
+
+#Donate-Info label {
+  display: block;
+  margin:auto;
+
+}
+
+input {
+  width: 95%;
+  height:100%;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding-top: auto;
+  padding-right: auto;
+}
+
+#progress{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 5%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* payment */
+
+.container {
+  background-color: #f2f2f2;
+  padding: 55px 30px 55px 30px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  margin-left:300px;
+  margin-right:300px
+}
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.fname{
+  display:flex; 
+  justify-content: center;
+}
+
+.backbutton{
+  margin:50px;
+}
+
+.backbutton a{
+  color:#6890a8;
+  margin:50px;
+}
+
+@media screen and (max-width: 1000px){
+  .backbutton{
+    display:none;
+  }
+  #progress{
+    display:none; 
+  }
+  .container{
+    margin:0;
+  }
+}
+
+/* NEWS*/ 
+
+#news h2{
+  color:#444445;
+  text-align:center;
+  margin: 30px 0px;
+
+}
+
+
+
+/*slideshow code fromhttps://css-tricks.com/css-only-carousel/*/ 
+
+.slider {
+  width: 60%;
+  
+  text-align: center;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  
+  
+  
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  
+  /*
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+  */
+}
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 300px;
+  height: 300px;
+  margin-right: 50px;
+  border-radius: 10px;
+  background: #eee;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+.slides > div:target {
+/*   transform: scale(0.8); */
+}
+
+
+//img here  {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slider > a {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+.slider > a:active {
+  top: 1px;
+}
+.slider > a:focus {
+  background: #000;
+}
