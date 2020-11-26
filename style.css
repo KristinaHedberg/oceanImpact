@@ -1079,6 +1079,10 @@ input[type=text] {
   margin-bottom: 30px; 
 }
 
+.involvedtitle{
+  padding-bottom:10px; 
+}
+
 .getinvolved-container img{
   display: block;
   margin-left: auto;
@@ -1122,22 +1126,21 @@ input[type=text] {
 #OURPROGRAMS h2{ 
   color:white;
   font-size:48px;
-  padding-top: 20%;
+
 }
 
 #OURPROGRAMS p{ 
   color:white;
-  font-size:20px;
+  font-size:19px;
   padding-top: 5%; 
   padding-right: 15%; 
 }
 
-
-
-
-
 .ourprograms-container {
   display: grid;
+  padding-top: 5%; 
+  padding-bottom: 10%; 
+  align-items: center; 
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
@@ -1145,5 +1148,182 @@ input[type=text] {
     "image-program text-program";
 }
 .text-program { grid-area: text-program; }
-.image-program { grid-area: image-program; }
 
+.image-program { 
+  grid-area: image-program; 
+  padding-top:5%;
+
+}
+.image-program img{ 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height:50%;
+}
+
+@media screen and (max-width: 1150px){
+  #OURPROGRAMS{
+    margin:0;
+  }
+  .ourprograms-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    margin-left:5%; 
+  }
+  .ourprograms-container img{
+    width:100%; 
+    border-radius: 5px;
+  }
+  .ourprograms-container p{
+    padding-bottom: 5px; 
+  }
+}
+
+
+
+#expect h2{
+  color:#195178;
+  padding:5%;  
+}
+
+#expect i{
+  color:#6890a8; 
+}
+
+/* stats under icon font */
+.iconinfo {
+  text-align: center;
+  margin:5px;
+  padding-top: 10px;
+  padding-bottom: 35px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size:15px; 
+}
+
+
+/*grid code from codepen*/
+.infocontainer {
+  display: flex; 
+  flex-wrap: wrap;
+}
+
+/* for icons in cell: */
+.cell {
+  flex-grow: 0.25;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .cell {
+    width: calc(50% - 2px)
+  }
+}
+
+@media (max-width: 360px) {
+  .cell {
+    width: calc(100% - 2px)
+  }
+}
+
+/* icon-hover codesource: https://ianlunn.co.uk/articles/hover-css-tutorial-introduction) */
+
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover,
+.hvr-float:focus,
+.hvr-float:active {
+  transform: translateY(-8px);
+}
+
+#programinformation{
+  background-color:#6990a8;
+}
+
+#programinformation p{ 
+  color:white;
+  font-size:20px;
+  padding-left: 10%; 
+}
+
+#programinformation h2{ 
+  color:white;
+  font-size:48px;
+  padding-bottom: 5%; 
+  padding-left: 5%;
+
+}
+
+.programinfo-container {
+  display: grid;
+  padding:10px 10px 50px 10px; 
+ 
+  align-items: center; 
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "program-infotext programinfo-image";
+}
+.programinfo-image {
+  grid-area: programinfo-image; 
+  padding-top: 10%; 
+  padding-left: 5%;
+  
+  
+  
+}
+.programinfo-image img{
+  
+  display: block;
+  padding-left:5%; 
+  padding-right: 5%; 
+  border-radius:10px;
+  max-width: 100%;
+  
+
+}
+
+.program-infotext { 
+  grid-area: program-infotext; 
+  padding-top:5%;
+}
+
+
+@media screen and (max-width: 1150px){
+  #programinformation{
+    margin:0;
+  }
+  .programinfo-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    margin-left:5%; 
+  }
+  .programinfo-container img{
+    width:100%; 
+    border-radius: 5px;
+  }
+  .programinfo-container p{
+    padding-bottom: 5px; 
+    padding-left:0;
+  }
+}
+
+#applications h2{
+  color:#114D74;
+  text-align:center;
+  font-size:15px; 
+  padding: 5%; 
+}
