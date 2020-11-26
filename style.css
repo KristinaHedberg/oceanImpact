@@ -210,6 +210,7 @@ main #siteTitle{
   padding-top: 20px; 
   padding-bottom: 25px;
   color:#444445;
+  font-size: 16px; 
 
 }
 .titletext h2, h3{
@@ -219,10 +220,18 @@ main #siteTitle{
 
 /* OUR MISSION SECTION */
 
+
 #ourMission h1{
   color: white;
   padding-top: 25px; 
   padding-bottom: 25px;
+  
+}
+
+#ourMission p {
+  margin-left: 5%; 
+  margin-right: 10%; 
+  font-size: 18px; 
 }
 
 /* Style the video: 100% width and height to cover the entire window code based on tutorial from w3 schools https://www.w3schools.com/howto/howto_css_fullscreen_video.asp*/
@@ -230,7 +239,7 @@ main #siteTitle{
   margin-top: 20vh; 
   align-items: center; 
   width: 100%;
-  background-color: #9fcadc; 
+  background-color: black;
 }
 
 /* Add some content at the bottom of the video/page */
@@ -241,6 +250,7 @@ main #siteTitle{
   padding-top: 2vh;
   padding-left: 5vh; 
   padding-bottom: 5vh; 
+   margin-bottom: 5px; 
 }
 
 .content p{
@@ -501,6 +511,10 @@ div.desc {
   color: white; 
 }
 
+.h3footer{
+  color: white; 
+}
+
 #oceanFooter h3, p{
   font-size: 0.8em; 
 }
@@ -524,6 +538,8 @@ div.desc {
   width: 50%
 }
 
+
+
 .connect { grid-area: connect; }
 
 .aboutus { grid-area: aboutus; }
@@ -542,11 +558,14 @@ div.desc {
 /* Donate page */
 
 #donationform{
-  background-color:#eff6f1;
   width:100%;
   height:100%;
 }
-
+.donationinput{
+  margin: 0;
+  height:50%;
+  width: 50%
+}
 
 .grid-container-donate {
   display: grid;
@@ -657,7 +676,7 @@ div > label{
   color:#444445;
 }
 
-.FirstName input {
+.FirstName .donationinput{
   width: 90%;
 }
 
@@ -666,8 +685,8 @@ div > label{
   margin-bottom:5%;
 }
 
-.LastName input {
-  width:90%;
+.LastName .donationinput {
+  width:100%;
 }
 
 .Email {
@@ -690,6 +709,11 @@ div > label{
   gap: 0px 0px;
   grid-template-areas:
   "donate5 donate15 donate30 selectamount"
+}
+
+.donateAmount p {
+  padding-top:2%; 
+  font-size: 18px; 
 }
 
 .donate5 {
@@ -1005,4 +1029,121 @@ input[type=text] {
     margin:0;
   }
 }
+
+/* GET INVOLVED SECTION */
+.pitch{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  background-color:#6890a8;
+  padding: 5px 30px 5px 30px;
+  border-radius: 14px; 
+  text-align: center;
+}
+
+.pitch p{
+  color: white; 
+}
+
+.getinvolved-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 60px 0px;
+  margin: 10px, 20px, 10px, 10px;
+  align-items: center;
+  grid-template-areas:
+    "image-donate text-donate"
+    "image-beach text-beach"
+    "image-mentor text-mentor"
+    "image-investor text-investor";
+}
+.image-donate { grid-area: image-donate; }
+.text-donate { grid-area: text-donate; }
+.image-beach { grid-area: image-beach; }
+.text-beach { grid-area: text-beach; }
+.image-mentor { grid-area: image-mentor; }
+.text-mentor { grid-area: text-mentor; }
+.image-investor { grid-area: image-investor; }
+.text-investor { grid-area: text-investor; }
+
+#GETINVOLVED{
+  margin:5%; 
+}
+#GETINVOLVED>h2,h3{
+  color:#114D74; 
+}
+#GETINVOLVED h2{
+  text-align: center; 
+  margin-bottom: 30px; 
+}
+
+.getinvolved-container img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  border-radius: 14px; 
+}
+.getinvolved-container p{
+  margin-right: 25%; 
+  padding-bottom: 10px; 
+}
+
+@media screen and (max-width: 1150px){
+  #GETINVOLVED{
+    margin:0;
+  }
+  .pitch{
+    width:100%;
+    border-radius: 0; 
+  }
+  .getinvolved-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+  }
+  .getinvolved-container img{
+    width:100%; 
+    border-radius: 5px;
+  }
+  .getinvolved-container p{
+    margin-right: 0%; 
+    padding-bottom: 5px; 
+}
+}
+
+/* OUR PROGRAMS */
+#OURPROGRAMS{ 
+  background-color:#6990a8;
+}
+
+#OURPROGRAMS h2{ 
+  color:white;
+  font-size:48px;
+  padding-top: 20%;
+}
+
+#OURPROGRAMS p{ 
+  color:white;
+  font-size:20px;
+  padding-top: 5%; 
+  padding-right: 15%; 
+}
+
+
+
+
+
+.ourprograms-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "image-program text-program";
+}
+.text-program { grid-area: text-program; }
+.image-program { grid-area: image-program; }
 
