@@ -1,3 +1,5 @@
+<!-- This html document had to be added to create a two step payment process. The first html form lets the user input information and choose an amount, this document takes the user to a payment page. Ideally this would be done in a single document using javascript -->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -17,7 +19,7 @@
     <!--------------navigation--------------->
     <nav id = "navBar">
       <div class="logo">
-        <img src="images/logosmall.png" alt="">
+        <a href="index.html"><img src="images/logosmall.png" alt="logo for ocean impact org"></a>
       </div>
       <ul class ="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -37,27 +39,29 @@
     
     <main>
 
+      <!-- A back button that lets the user easily go back to the information form on donate.html -->
+
       <div class="backbutton">
         <a href="donate.html"><i class="fas fa-chevron-left"></i>back</a>
       </div>
+
      
       <section id = "donationform">
 
         <div class="Donate-Title">
           <h2>Support Ocean Impact Org</h2>
         </div>
+
         <figure>
           <img id="progress" src="images/progress2.png" alt="progressbar">
         </figure>
 
+        <!-- Payment form -->
+
         <div class="row">
           <div class="col-75">
             <div class="container">
-              
-              <div class="row">
-                
-
-            
+              <div class="row">            
                 <div class="col-50">
                   <label for="fname">Accepted Cards</label>
                   <div class="icon-container">
@@ -88,8 +92,9 @@
             </div>
           </div>
         </div>
-      
 
+        <!-- donate button -->
+    
         <div class="Donate-donate">
           <button class="Donate-btn"><a href="index.html">Donate</a></button>
         </div>
